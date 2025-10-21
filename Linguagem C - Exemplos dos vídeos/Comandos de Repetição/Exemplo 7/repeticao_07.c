@@ -5,8 +5,9 @@ int main(){
     int a, b, c;
     printf("Digite o valor de a:");
     scanf("%d", &a);
-    printf("Digite o valor de a:");
+    printf("Digite o valor de b:");
     scanf("%d", &b);
+    
     //incremento de duas unidades
     for(c = a; c <= b; c = c +2){
         printf("%d \n", c);
