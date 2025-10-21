@@ -5,6 +5,7 @@ qual tem o maior tamanho*/
 #include <stdlib.h>
 #include <string.h>
 int main(){
+    
     char str1[100], str2[100];
     if (fgets(str1, 100, stdin) == 0) str1[0] = '\0';
     int len1 = (int) strlen(str1);

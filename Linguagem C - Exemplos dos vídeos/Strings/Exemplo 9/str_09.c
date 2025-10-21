@@ -4,9 +4,9 @@ se ela contem a letra A*/
 #include <stdio.h>
 #include <string.h>
 
-int main(void) {
+int main() {
     char string[100];
-    if (!fgets(string, sizeof string, stdin)) return 0;
+    if (!fgets(string, 100, stdin)) return 0;
     size_t len = strlen(string);
     if (len && string[len-1] == '\n') string[len-1] = '\0';
 
