@@ -14,22 +14,19 @@ int main(){
     }
     for(i = 0; i < 4; i++){
         for(j = 0; j < 7; j++){
-        printf("%f", mat[i][j]);
+        printf("%.2f \n", mat[i][j]);
         }
     }
     for(i = 0; i < 4; i++){
-        for(j = 0; j < 7; j++){
-            aux = mat[i][j];
-            mat[i][j] = mat[i++][j++];
-            mat[i++][j++] = aux;
+        for(j = 0; j < 7 - 1; j++){
+            if(mat[i][j] > mat[i++][j++]){
+                aux = mat[i][j];
+                mat[i][j] = mat[i++][j++];
+                mat[i++][j++] = aux;
+                printf("%.2f \n", mat[i][j]);
+            }
         }
     }
-    for(i = 0; i < 4; i++){
-        for(j = 0; j < 7; j++){
-        printf("%f", mat[i][j]);
-        }
-    }
-
-
+    
     return 0;
 }
