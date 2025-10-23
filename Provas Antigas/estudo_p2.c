@@ -35,7 +35,6 @@ int main() {
         }
     }
 
-    // Print sorted matrix
     printf("\nMatriz decrescente: \n");
     for(i = 0; i < 4; i++) {
         for(j = 0; j < 7; j++) {
