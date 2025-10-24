@@ -34,8 +34,6 @@ int main() {
             }
         }
     }
-<<<<<<< HEAD
-=======
 
     printf("\nMatriz decrescente: \n");
     for(i = 0; i < 4; i++) {
@@ -44,7 +42,6 @@ int main() {
         }
         printf("\n");
     }
-    
->>>>>>> 976613352de33e07a8146079d8683922e956bd14
+       
     return 0;
 }
