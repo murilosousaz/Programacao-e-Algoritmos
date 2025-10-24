@@ -11,7 +11,7 @@ int main(){
     struct Produto p[3];
     float soma = 0;
 
-    for(int i = 0; i < 3, i++){
+    for(int i = 0; i < 3; i++){
         printf("Produto %d nome: ", i + 1);
         scanf("%s", p[i].nome);
         printf("Preco %d:", i + 1);
