@@ -1,24 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float maior(float num1, float num2){
-    if(num1 > num2){
-        return num1;
-    }else{
-        return num2;
-    }
+int quadrado(int a){
+    return a * a;
 }
 
 int main(){
-    float x, y, m;
-    printf("Insira um valor: \n");
-    scanf("%f", &x);
-    printf("Insira mais um valor: \n");
-    scanf("%f", &y);
+    int n1, n2;
+    printf("\n Entre com um numero: ");
+    scanf("%d", &n1);
 
-    m = maior(x, y);
+    n2 = quadrado(n1);
 
-    printf("O maior eh: %.2f", m);
-
+    printf("\n O seu quadrado vale: %d", n2);
     return 0;
-}   
+}

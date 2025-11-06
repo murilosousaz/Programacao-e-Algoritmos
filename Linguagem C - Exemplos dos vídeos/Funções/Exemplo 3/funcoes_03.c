@@ -1,20 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void imprime(int m[][4], int n){
-    int i, j;
-    for(i = 0; i < n; i++){
-        for(j = 0; j < n; j++){
-            printf("%d", m[i][j]);
-        }
-        printf("\n");
+int fatorial(int n) {
+    if (n < 0) {
+        printf("Nao existe fatorial de numero negativo!\n");
+        return -1; 
     }
+
+    int f = 1;
+    for (int i = 1; i <= n; i++) {
+        f = f * i;
+    }
+
+    return f;
 }
 
 int main(){
-    int mat[3][4] = {{1, 2, 3, 4},{50, 60, 70, 80}, {91, 101, 111, 121}};
+    int a, res;
+    printf("Insira o numero que vc quer descobrir o fatorial: \n");
+    scanf("%d", &a);
 
-    imprime(mat, 4);
+    res = fatorial(a);
+
+    if (res != -1) {
+        printf("O fatorial de %d eh %d\n", a, res);
+    }
 
     return 0;
 }

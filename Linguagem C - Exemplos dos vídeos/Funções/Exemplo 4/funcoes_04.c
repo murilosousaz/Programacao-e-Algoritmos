@@ -1,23 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float maior(float num1, float num2);
+void incrementa(int n){
+    n = n + 1;
 
-int main(){
-    int x, y, m;
-    printf("Insira um valor: \n");
-    scanf("%f", &x);
-    printf("Insira mais um valor: \n");
-    scanf("%f", &y);
-
-    m = maior(x, y);
-    printf("Maior: %.2f\n", m);
+    printf("Dentro da funcao x = %d\n", n);
 }
 
-float maior(float num1, float num2){
-    if(num1 > num2){
-        return num1;
-    }else{
-        return num2;
-    }
+int main(){
+    int x = 5;
+    printf("Antes da funcao x = %d\n", x);
+
+    incrementa(x);
+
+    printf("Depois da funcao x = %d\n", x);
+
+    return 0;
 }
