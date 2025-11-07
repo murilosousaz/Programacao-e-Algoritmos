@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 void incrementa(int *n){
-    *n = *n + 1;
+    *n = *n + 1.0f;
 
-    printf("Dentro da funcao: x = %d\n", n);
+    printf("Dentro da funcao: x = %d\n", *n);
 }
 
 int main(){

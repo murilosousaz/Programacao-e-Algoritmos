@@ -16,5 +16,6 @@ int main(){
     scanf("%d", &a);
     res = fibo(a);
     printf("Fibonacci: %d", res);
+    
     return 0;
 }
