@@ -4,3 +4,5 @@
 
 #### - Exemplos abordados nos vídeos da Profa. Ana Luiza
 #### - Listas de Exercícios
+
+### ⚠️ Pode haver alguns erros

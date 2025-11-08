@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int mod(int x, int y){
+    if(x < y){
+        return x;
+    }else{
+        return mod(x - y, y);
+    }
+}
+
+int main(){
+    int a, b, res;
+    printf("Insira o primeiro valor: ");
+    scanf("%d", &a);
+    printf("Insira o segundo valor: ");
+    scanf("%d", &b);
+    res = mod(a,b);
+    printf("%d", res);
+    return 0;
+}
