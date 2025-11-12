@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void incrementa(int *n){
-    *n = *n + 1.0f;
+    *n = *n + 1;
 
     printf("Dentro da funcao: x = %d\n", *n);
 }
@@ -14,5 +14,5 @@ int main(){
     incrementa(&x);
 
     printf("Depois da funcao: x = %d\n", x);
-    return 0;
+    return 0;     
 }
