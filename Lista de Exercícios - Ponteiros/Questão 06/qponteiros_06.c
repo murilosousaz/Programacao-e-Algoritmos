@@ -7,5 +7,17 @@ após o uso.*/
 #include<stdlib.h>
 
 int main(){
-    
+    //usando array
+    int vet[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int *p = vet;
+    int i;
+    for(i = 0; i < 10; i++){
+        printf("%d \n", p[i]);
+    }
+    //usando ponteiro
+    for(i = 0; i < 10; i++){
+        printf("%d \n", *(p + i));
+    }
+    free(p);
+    return 0;
 }
