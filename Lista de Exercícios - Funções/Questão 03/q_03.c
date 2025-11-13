@@ -8,17 +8,14 @@ essa soma. Em seguida, crie um pequeno programa utilizando essa função para te
 int funcao(int n1,int n2){
     int i, soma = 0;
     int temp;
-
     if(n1 > n2){
         temp = n1;
         n1 = n2;
         n2 = temp;
     }
-
     for(i = n1; i <= n2; i++){
         soma += i;
     }
-
     return soma;
 }
 

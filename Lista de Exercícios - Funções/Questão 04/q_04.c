@@ -5,7 +5,7 @@ imprimir se cada número de 1 a 1000 é primo ou não.*/
 #include <stdio.h>
 #include <stdlib.h>
 
-int primo(int x) {
+int primo(int x){
     if (x < 2) {
         return 0;
     }
